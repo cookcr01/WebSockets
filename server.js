@@ -4,29 +4,27 @@ const ejs = require('ejs');
 const http = require('http');
 const container = require('./container');
 
-
-
 container.resolve(function (users) {
 
     const app = SetupExpress();
 
     function SetupExpress() {
-        const app = express;
+        const app = express();
         const server = http.createServer(app);
         server.listen(3000, function () {
             console.log("listening on port 3000");
         });
 
-        configureExpress(app);
+        ConfigureExpress(app);
+
         //setup router
         const router = require('express-promise-router')();
-        users.SetRouteing(router);
+        users.SetRouting(router);
+
+        app.use(router);
     }
-
-
-    app.use(router);
-
-    function configureExpress(app) {
+    
+    function ConfigureExpress(app) {
         app.use(express.static('public'));
         app.set('view engine', 'ejs');
         app.use(bodyParser.json());
