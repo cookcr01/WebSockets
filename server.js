@@ -4,7 +4,9 @@ const ejs = require('ejs');
 const http = require('http');
 const container = require('./container');
 
-container.resolve(function(){
+
+
+container.resolve(function(users){
      
     const app = SetupExpress();
 
@@ -15,6 +17,10 @@ container.resolve(function(){
             console.log("listening on port 3000");
         });
     }
+    //setup router
+    const router = require('express-promise-router')();
+    users.SetRouteing(router);
 
+    app.use(router);
 
 });
