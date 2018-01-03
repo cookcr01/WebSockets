@@ -18,7 +18,9 @@
   "homepage": "https://github.com/cookcr01/WebSockets#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "dependable": "^1.1.0",
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "lodash": "^4.17.4"
   }
 }
