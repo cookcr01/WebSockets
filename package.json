@@ -1,0 +1,19 @@
+{
+  "name": "socketfootball",
+  "version": "1.0.0",
+  "description": "A char application built with node. mongodb. express and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cookcr01/WebSockets.git"
+  },
+  "author": "Cameron Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cookcr01/WebSockets/issues"
+  },
+  "homepage": "https://github.com/cookcr01/WebSockets#readme"
+}
