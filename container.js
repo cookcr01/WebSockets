@@ -6,6 +6,7 @@ const container = dependable.container();
 const simpleDependecies = [
     ['_', 'lodash'],
     ['async','async']
+
 ];
 
 simpleDependecies.forEach(function (val) {
